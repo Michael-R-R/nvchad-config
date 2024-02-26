@@ -3,7 +3,7 @@ local M = {}
 M.setup = function()
 
     require('lint').linters_by_ft = {
-        text = {'proselint', }
+        markdown = {'proselint', }
     }
 
     vim.api.nvim_create_autocmd({ "BufWritePost" }, {
